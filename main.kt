@@ -121,9 +121,9 @@ fun main() {
  */
 fun checkTemperature(temp: Int) {
     when {
-        temp >= 30 -> println("It's hot outside!")
-        temp >= 20 -> println("The weather is pleasant.")
-        temp >= 10 -> println("It's a bit chilly.")
+        temp >= 30 -> println("hot day!")
+        temp >= 20 -> println("perfect weather .")
+        temp >= 10 -> println("cold weather.")
         else -> println("It's quite cold!")
     }
 }
