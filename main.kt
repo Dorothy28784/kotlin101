@@ -128,3 +128,42 @@ fun checkTemperature(temp: Int) {
     }
 }
  
+
+
+// //3.3when expression 
+// fun main() {
+//     val trafficLight = "YELLOW"
+
+//     // 'when' as an expression assigning a value to a variable
+//     val trafficAction = when (trafficLight) {
+//         "RED" -> "STOP"
+//         "YELLOW" -> "CAUTION"
+//         "GREEN" -> "GO"
+//         else -> "INVALID"
+//     }
+
+//     println("The light is $trafficLight =  $trafficAction.")
+// }
+
+
+
+
+
+// // 4.1	while loop
+// fun main() {
+//     for (i in 1..10) {
+//         println(i)
+//     }
+// }
+
+
+// 4.2 do while loop
+fun main() {
+    var count = 5
+    do {
+        println("Countdown: ${count--}")
+    } while (count > 0)
+    
+    println("Blast off!")
+}
+
