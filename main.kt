@@ -101,12 +101,30 @@ fun main(){
 //task3(conditioanl statements)
 
  //task 3.1(if else)
-//  fun checkTemperature(temperature: Int) {
-//     if (temperature > 30){
-//      println("Hot day")
-//     }else if (temperature in 20..30){
-//      println("Perfect weather")
-//      }else{
-//          println("cool day")
-//      }
-//  }
+//  The main function - the entry point of the program
+fun main() {
+    println("--- Temperature Checker ---")
+    
+    // Testing different scenarios
+    print("Testing 35 degrees: ")
+    checkTemperature(35)
+    
+    print("Testing 25 degrees: ")
+    checkTemperature(25)
+    
+    print("Testing 15 degrees: ")
+    checkTemperature(15)
+}
+
+/**
+ * Evaluates the temperature and prints a descriptive message.
+ */
+fun checkTemperature(temp: Int) {
+    when {
+        temp >= 30 -> println("It's hot outside!")
+        temp >= 20 -> println("The weather is pleasant.")
+        temp >= 10 -> println("It's a bit chilly.")
+        else -> println("It's quite cold!")
+    }
+}
+ 
